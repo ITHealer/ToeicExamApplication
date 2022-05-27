@@ -10,9 +10,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToeicExamApplication">
         <activity
+            android:name=".account.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".account.MyProfileActivity"
+            android:exported="false"
+            android:label="@string/menu_my_profile" />
+        <activity
+            android:name=".reading.ReadingActivity"
+            android:exported="false"
+            android:label="@string/menu_reading" />
+        <activity
+            android:name=".grammar.GrammarActivity"
+            android:exported="false"
+            android:label="@string/menu_grammar" />
+        <activity
+            android:name=".listening.ListeningActivity"
+            android:exported="false"
+            android:label="@string/menu_listening" />
+        <activity
+            android:name=".vocabulary.VocabularyActivity"
+            android:exported="false"
+            android:label="@string/menu_vocabulary" />
+        <activity
+            android:name=".account.LoginActivity"
+            android:label="@string/login"
+            android:theme="@style/Theme.ToeicExamApplication.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/home"
             android:theme="@style/Theme.ToeicExamApplication.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

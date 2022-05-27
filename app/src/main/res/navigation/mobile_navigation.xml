@@ -11,15 +11,35 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.toeicexamapplication.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+    <activity
+        android:id="@+id/nav_learn_vocabulary"
+        android:label="@string/menu_vocabulary"
+        android:name="com.example.toeicexamapplication.vocabulary.VocabularyActivity"
+        tools:layout="@layout/activity_vocabulary" />
 
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.toeicexamapplication.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/nav_grammar"
+        android:label="@string/menu_grammar"
+        android:name="com.example.toeicexamapplication.grammar.GrammarActivity"
+        tools:layout="@layout/activity_grammar" />
+
+    <activity
+        android:id="@+id/nav_listening"
+        android:label="@string/menu_listening"
+        android:name="com.example.toeicexamapplication.listening.ListeningActivity"
+        tools:layout="@layout/activity_listening" />
+
+    <activity
+        android:id="@+id/nav_reading"
+        android:label="@string/menu_reading"
+        android:name="com.example.toeicexamapplication.reading.ReadingActivity"
+        tools:layout="@layout/activity_reading" />
+
+    <activity
+        android:id="@+id/nav_my_profile"
+        android:label="@string/menu_my_profile"
+        android:name="com.example.toeicexamapplication.account.MyProfileActivity"
+        tools:layout="@layout/activity_my_profile"/>
+
+
 </navigation>

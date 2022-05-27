@@ -7,7 +7,25 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="login_register_button">Chưa có tài khoản? <b>Đăng ký ngay</b></string>
+    <string name="signup_register_button">Bạn có tài khoản rồi? <b>Đăng nhập ngay</b></string>
+    <string name="signup_forgot_button">Bạn đã cập nhật lại mật khẩu? <b>Đăng nhập ngay</b></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="home">Home</string>
+
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_setting">Setting</string>
+    <string name="language_learning_application">Language Learning Application</string>
+    <string name="healer_toeic">Healer Toeic</string>
+
+    <string name="menu_vocabulary">Từ vựng</string>
+    <string name="menu_grammar">Ngữ pháp</string>
+    <string name="menu_listening">listening</string>
+    <string name="menu_reading">reading</string>
+    <string name="menu_my_profile">Thông tin tài khoản</string>
+
+    <string name="login">Đăng nhập</string>
+    <string name="hello">Hello</string>
+    <string name="learning_language_application_healer">Learning language application Healer!</string>
+
 </resources>
