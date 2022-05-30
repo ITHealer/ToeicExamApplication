@@ -16,10 +16,9 @@ public class activity_reading_questions extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reading_questions);
-
+        int i;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.cPrimary)));
-
         Reading = findViewById(R.id.tV_show);
         Reading.setOnClickListener(new View.OnClickListener() {
             @Override

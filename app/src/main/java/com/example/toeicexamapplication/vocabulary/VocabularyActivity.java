@@ -15,7 +15,7 @@ import com.example.toeicexamapplication.vocabulary.VocabularyActivity;
 import com.example.toeicexamapplication.vocabulary.activity_vocabulary_words;
 
 public class VocabularyActivity extends AppCompatActivity {
-    private TextView topic;
+    private TextView topics;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +23,9 @@ public class VocabularyActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.cPrimary)));
-
-        topic = findViewById(R.id.tV_topic);
-        topic.setOnClickListener(new View.OnClickListener() {
+        int i;
+        topics = findViewById(R.id.tV_topic);
+        topics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(VocabularyActivity.this, activity_vocabulary_words.class);

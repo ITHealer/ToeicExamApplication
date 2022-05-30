@@ -14,7 +14,7 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="InvalidId"
-        tools:layout_editor_absoluteX="-3dp">
+        tools:layout_editor_absoluteX="3dp">
 
         <TextView
             android:id="@+id/tv_R"

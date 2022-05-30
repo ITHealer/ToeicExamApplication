@@ -16,7 +16,7 @@
             android:parentActivityName=".vocabulary.VocabularyActivity"/>
         <activity
             android:name=".reading.activity_reading_questions"
-            android:label="Questions"
+            android:label="Question"
             android:exported="false"
             android:parentActivityName=".reading.ReadingActivity"/>
         <activity

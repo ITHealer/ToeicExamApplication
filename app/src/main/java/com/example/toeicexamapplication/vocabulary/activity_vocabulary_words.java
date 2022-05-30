@@ -14,6 +14,7 @@ public class activity_vocabulary_words extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vocabulary_words);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        int i;
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.cPrimary)));
     }
 }
