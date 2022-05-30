@@ -1,34 +1,30 @@
-package com.example.toeicexamapplication.vocabulary;
+package com.example.toeicexamapplication.reading;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.toeicexamapplication.R;
-import com.example.toeicexamapplication.vocabulary.VocabularyActivity;
-import com.example.toeicexamapplication.vocabulary.activity_vocabulary_words;
 
-public class VocabularyActivity extends AppCompatActivity {
-    private TextView topic;
+public class activity_reading_questions extends AppCompatActivity {
+    private TextView Reading;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vocabulary);
+        setContentView(R.layout.activity_reading_questions);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.cPrimary)));
 
-        topic = findViewById(R.id.tV_topic);
-        topic.setOnClickListener(new View.OnClickListener() {
+        Reading = findViewById(R.id.tV_show);
+        Reading.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(VocabularyActivity.this, activity_vocabulary_words.class);
+                Intent intent=new Intent(activity_reading_questions.this, activity_reading_answers.class);
                 startActivity(intent);
             }
         });

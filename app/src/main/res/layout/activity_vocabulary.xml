@@ -4,17 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgr_vcbl2"
     tools:context=".vocabulary.VocabularyActivity">
 
+    <ImageButton
+        android:id="@+id/ibtn_back"
+        android:layout_width="62dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ibtn_vocabulary"
+        android:layout_width="330dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vcl"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <TextView
+        app:layout_constraintTop_toBottomOf="@id/ibtn_vocabulary"
+        android:id="@+id/tV_topic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="188dp"
-        android:gravity="center"
-        android:text="Vocabulary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp"
+        android:text="Topic :"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_white"
+        app:layout_constraintTop_toBottomOf="@id/tV_topic"
+        tools:layout_editor_absoluteX="3dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

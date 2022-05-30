@@ -3,40 +3,42 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable-v24/ic_baseline_email_24.xml" value="0.155" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable-v24/ic_lock.xml" value="0.155" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable-v24/ic_person.xml" value="0.155" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable-v24/ic_visibility.xml" value="0.155" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable-v24/login_button_bg.xml" value="0.155" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable-v24/login_edittext_bg.xml" value="0.155" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/header_background.xml" value="0.1985" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/ic_baseline_lock_clock_24.xml" value="0.1985" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.1985" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/ic_hearing.xml" value="0.1625" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/ic_logout.xml" value="0.1625" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/ic_setting.xml" value="0.1625" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/ic_vocabulary.xml" value="0.1625" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/search_icon_background.xml" value="0.1985" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/side_nav_bar.xml" value="0.155" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/trending_background.xml" value="0.1985" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/drawable/white_rectangle_background.xml" value="0.1985" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_grammar.xml" value="0.20416666666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_listening.xml" value="0.20416666666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_my_profile.xml" value="0.20416666666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_reading.xml" value="0.20416666666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_vocabulary.xml" value="0.20416666666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/app_bar_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/login_motion.xml" value="0.19010416666666666" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/menu/main.xml" value="0.2" />
-        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/xml/login_motion.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable-v24/ic_back.xml" value="0.178" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable-v24/login_button_bg.xml" value="0.161" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable-v24/login_edittext_bg.xml" value="0.161" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable/border.xml" value="0.161" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable/header_background.xml" value="0.161" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable/ic_menu_book.xml" value="0.1575" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1575" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1575" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable/search_icon_background.xml" value="0.161" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable/side_nav_bar.xml" value="0.161" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_grammar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_listening.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_my_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_reading.xml" value="0.25" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_reading2.xml" value="0.25" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_reading3.xml" value="0.25" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_reading_answer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_reading_answers.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_reading_question.xml" value="0.22" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_reading_questions.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_splash.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_vocabulary.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_vocabulary_detail.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_vocabulary_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/activity_vocabulary_words.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/app_bar_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/fragment_gallery.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/item_quiz.xml" value="0.22" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/item_reading.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/item_word.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/layout/nav_header_main.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
