@@ -4,11 +4,13 @@ buildscript {
         // Check that you have the following line (if not, add it):
         google()  // Google's Maven repository
         jcenter()
+        maven {
+            url 'https://maven.google.com'
+        }
     }
     dependencies {
         // Add this line
         classpath 'com.google.gms:google-services:4.3.10'
-
     }
 }
 
