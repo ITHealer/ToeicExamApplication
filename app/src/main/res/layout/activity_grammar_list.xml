@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".grammar.Grammar_List">
+    <LinearLayout
+        android:id="@+id/linearGrammar"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="5dp"
+        android:background="#66D8ED"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="InvalidId"
+        tools:layout_editor_absoluteX="3dp">
+
+        <TextView
+            android:id="@+id/tv_G"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="G"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="R"
+            android:textColor="@color/colorBlue"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="A"
+            android:textColor="@color/darkOrange"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="M"
+            android:textColor="@color/colorAccent"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_M2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="M"
+            android:textColor="@color/cPrimary"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_A2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="A"
+            android:textColor="@color/cDivider"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_R2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fredokaoneregular"
+            android:text="R"
+            android:textColor="@color/colorAccent2"
+            android:textSize="50dp" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearGrammar"
+        app:layout_constraintBottom_toTopOf="@+id/lvGrammar"
+        android:textSize="30dp"
+        android:hint="Tense Name"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:textAlignment="center"/>
+    <ListView
+        android:id="@+id/lvGrammar"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_listview_grammar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
