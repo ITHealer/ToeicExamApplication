@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_my_profile.xml" value="0.25" />
+        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_reading.xml" value="0.15896739130434784" />
+        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
+        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/dialog_forgot_password.xml" value="0.22" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/drawable/background_listview_grammar.xml" value="0.2595" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/drawable/question_background.xml" value="0.2595" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_grammar.xml" value="0.264" />

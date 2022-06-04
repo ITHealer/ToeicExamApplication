@@ -4,7 +4,7 @@
 
     <Transition
         motion:autoTransition="animateToEnd"
-        motion:constraintSetEnd="@layout/activity_login"
+        motion:constraintSetEnd="@layout/activity_sign_in"
         motion:constraintSetStart="@layout/activity_splash"
         motion:duration="5000">
 

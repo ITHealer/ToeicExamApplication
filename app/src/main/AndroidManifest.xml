@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.toeicexamapplication">
-
+    package="com.example.toeicexamapplication" >
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ToeicExamApplication">
+        android:theme="@style/Theme.ToeicExamApplication" >
+
         <activity
             android:name=".grammar.Grammar_List"
             android:exported="false" />
@@ -31,9 +32,6 @@
             android:label="Answers"
             android:parentActivityName=".reading.activity_reading_questions" />
         <activity
-            android:name=".account.SignUpActivity"
-            android:exported="false" />
-        <activity
             android:name=".account.MyProfileActivity"
             android:exported="false"
             android:label="@string/menu_my_profile" />
@@ -55,20 +53,33 @@
             android:exported="false"
             android:label="Vocabulary"
             android:parentActivityName=".MainActivity" />
+
         <activity
-            android:name=".account.LoginActivity"
-            android:label="@string/login"
-            android:theme="@style/Theme.ToeicExamApplication.NoActionBar" />
+            android:name=".account.ForgotPasswordActivity"
+            android:exported="false" />
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/home"
-            android:theme="@style/Theme.ToeicExamApplication.NoActionBar">
+            android:name=".account.SignUpActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".account.SignInActivity"
+            android:exported="false" />
+
+        <activity android:name=".account.SplashActivity"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/home"
+            android:theme="@style/Theme.ToeicExamApplication.NoActionBar" >
         </activity>
     </application>
 
