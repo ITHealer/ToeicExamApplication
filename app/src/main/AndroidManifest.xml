@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.toeicexamapplication" >
-    <uses-permission android:name="android.permission.INTERNET"/>
+    package="com.example.toeicexamapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Healer"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ToeicExamApplication" >
-
+        android:theme="@style/Theme.ToeicExamApplication">
+        <activity
+            android:name=".reading.activity_content"
+            android:exported="false"
+            android:label="Content"
+            android:parentActivityName=".reading.ReadingActivity"/>
+        <activity
+            android:name=".vocabulary.activity_list_word"
+            android:exported="false"
+            android:label="List word"
+            android:parentActivityName=".vocabulary.VocabularyActivity" />
         <activity
             android:name=".grammar.Grammar_List"
             android:exported="false" />
@@ -25,7 +36,7 @@
             android:name=".reading.activity_reading_questions"
             android:exported="false"
             android:label="Question"
-            android:parentActivityName=".reading.ReadingActivity" />
+            android:parentActivityName=".reading.activity_content" />
         <activity
             android:name=".reading.activity_reading_answers"
             android:exported="false"
@@ -53,34 +64,28 @@
             android:exported="false"
             android:label="Vocabulary"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".account.ForgotPasswordActivity"
             android:exported="false" />
-
         <activity
             android:name=".account.SignUpActivity"
             android:exported="false" />
-
         <activity
             android:name=".account.SignInActivity"
             android:exported="false" />
-
-        <activity android:name=".account.SplashActivity"
+        <activity
+            android:name=".account.SplashActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:label="@string/home"
-            android:theme="@style/Theme.ToeicExamApplication.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.ToeicExamApplication.NoActionBar" />
     </application>
 
 </manifest>

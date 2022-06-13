@@ -3,28 +3,15 @@ package com.example.toeicexamapplication.vocabulary;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.ContextMenu;
-import android.view.Menu;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.example.toeicexamapplication.R;
-import com.example.toeicexamapplication.account.User;
-import com.example.toeicexamapplication.reading.ReadingActivity;
-import com.example.toeicexamapplication.reading.activity_reading_questions;
-import com.example.toeicexamapplication.vocabulary.VocabularyActivity;
-import com.example.toeicexamapplication.vocabulary.activity_vocabulary_words;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,34 +21,42 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VocabularyActivity extends AppCompatActivity implements ValueEventListener {
+public class activity_list_word extends AppCompatActivity implements ValueEventListener {
 
     DatabaseReference databaseReference;
-    ListTopicAdapter adaptertopic;
-    List<Topic> topicList;
+    ListTopicAdapter adapterword;
+    List<Topic> wordList;
     ListView listView;
+    TextView tv_topic;
     String ChuDe;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vocabulary);
+        setContentView(R.layout.activity_list_word);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.cPrimary)));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("Vocabulary");
-        listView = (ListView) findViewById(R.id.listView_Topic);
-        topicList = new ArrayList<>();
-        adaptertopic = new ListTopicAdapter(this,R.layout.item_reading,topicList);
-        listView.setAdapter(adaptertopic);
+        listView = (ListView) findViewById(R.id.list_word);
+        tv_topic = findViewById(R.id.tV_topic);
+
+        Intent intent = getIntent();
+        String ChuDe = intent.getStringExtra("ChuDe");
+        tv_topic.setText(ChuDe);
+
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Vocabulary").child(ChuDe);
+        wordList = new ArrayList<>();
+        adapterword = new ListTopicAdapter(this,R.layout.item_reading,wordList);
+        listView.setAdapter(adapterword);
         databaseReference.addValueEventListener(this);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent=new Intent(VocabularyActivity.this, activity_list_word.class);
-                ChuDe = topicList.get(i).getName_topic();
+                Intent intent=new Intent(activity_list_word.this, activity_vocabulary_words.class);
+                String ChuDe1 = wordList.get(i).getName_topic();
                 intent.putExtra("ChuDe", ChuDe);
+                intent.putExtra("ChuDe1",ChuDe1);
                 startActivity(intent);
             }
         });
@@ -70,17 +65,14 @@ public class VocabularyActivity extends AppCompatActivity implements ValueEventL
     @Override
     public void onDataChange(@NonNull DataSnapshot snapshot) {
         Iterable<DataSnapshot> nodeChild = snapshot.getChildren();
-        for(DataSnapshot data : nodeChild)
-        {
+        for (DataSnapshot data : nodeChild) {
             String name = data.getKey();
             Topic topic = new Topic(name);
-//            Topic topic = data.getValue(Topic.class);
-            topicList.add(topic);
-            adaptertopic.notifyDataSetChanged();
-
+            wordList.add(topic);
+            adapterword.notifyDataSetChanged();
         }
+
     }
-    @Override
     public void onCancelled(@NonNull DatabaseError error) {
 
     }

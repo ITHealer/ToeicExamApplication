@@ -95,20 +95,10 @@
 
 
     </LinearLayout>
-    <TextView
-        android:id="@+id/tV_topic"
-        app:layout_constraintTop_toBottomOf="@id/linear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_white"
-        android:layout_marginTop="10dp"
-        android:text="Topic :"
-        android:textSize="30dp"
-        android:textStyle="italic|bold"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="160dp" />
+
     <ListView
             android:layout_width="match_parent"
+        android:id="@+id/list_reading"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"

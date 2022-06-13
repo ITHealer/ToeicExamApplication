@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cPrimary"
     android:orientation="vertical">
 
     <LinearLayout
@@ -20,7 +19,7 @@
             android:fontFamily="@font/fredokaoneregular"
             android:gravity="center"
             android:text="Topic Name"
-            android:textColor="#ffdab9"
+            android:textColor="@color/cPrimary"
             android:textSize="40dp"
             android:textStyle="" />
     </LinearLayout>
@@ -110,21 +109,6 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_Done"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="@color/light_grey"
-        android:gravity="center"
-        android:text="Done"
-        android:textColor="@color/cPrimary"
-        android:textSize="20dp"
-        android:textStyle="bold" />
 
 
 </LinearLayout>
