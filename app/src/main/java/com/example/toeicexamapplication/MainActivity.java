@@ -6,7 +6,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
-import com.example.toeicexamapplication.account.SignInActivity;
+import com.example.toeicexamapplication.account.LoginActivity;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
         mLogOut.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
+                //FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
                 return false;

@@ -22,7 +22,6 @@ import com.google.firebase.auth.SignInMethodQueryResult;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
 import org.w3c.dom.Text;
 
 public class SignUpActivity extends AppCompatActivity {
@@ -38,7 +37,6 @@ public class SignUpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         // khởi tạo các widget

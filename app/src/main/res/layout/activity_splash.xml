@@ -5,10 +5,10 @@
     app:layoutDescription="@xml/login_motion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".account.SignInActivity">
+    tools:context=".account.LoginActivity">
 
     <ImageView
-        android:id="@+id/img_logo"
+        android:id="@+id/imageView_logo"
         android:layout_width="130dp"
         android:scaleType="centerInside"
         android:layout_height="130dp"
@@ -21,7 +21,7 @@
 
         />
     <ImageView
-        android:id="@+id/img_logoRays"
+        android:id="@+id/imageView_logoRays"
         android:layout_width="130dp"
         android:scaleType="centerInside"
         android:layout_height="130dp"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/img_cloudLeft"
+        android:id="@+id/imageView_cloudLeft"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="16dp"
@@ -46,7 +46,7 @@
         app:tint="@color/lightGrey" />
 
     <ImageView
-        android:id="@+id/img_cloudRight"
+        android:id="@+id/imageView_cloudRight"
         android:layout_marginTop="120dp"
         android:scaleType="centerInside"
         android:layout_width="130dp"
@@ -134,7 +134,7 @@
 
     <TextView
 
-        android:id="@+id/tv_forgot_password"
+        android:id="@+id/textView_forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -148,7 +148,7 @@
         app:layout_constraintTop_toBottomOf="@id/linearlayout_inputs" />
 
     <TextView
-        android:id="@+id/tv_register"
+        android:id="@+id/textView_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login_register_button"

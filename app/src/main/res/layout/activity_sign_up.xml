@@ -5,14 +5,14 @@
     app:layoutDescription="@xml/login_motion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".account.SignInActivity">
+    tools:context=".account.LoginActivity">
 
     <ImageView
-        android:id="@+id/img_logo"
+        android:id="@+id/imageView_logo"
         android:layout_width="130dp"
         android:scaleType="centerInside"
         android:layout_height="130dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/icon_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,21 +20,21 @@
         />
 
     <ImageView
-        android:id="@+id/img_logoRays"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/icon_login2"
         android:rotation="180"
+        android:id="@+id/imageView_logoRays"
+        android:layout_width="130dp"
         android:scaleType="centerInside"
+        android:layout_height="130dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/icon_login2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <ImageView
-        android:id="@+id/img_cloudLeft"
-        android:layout_marginTop="5dp"
+        android:id="@+id/imageView_cloudLeft"
+        android:layout_marginTop="10dp"
         android:scaleType="centerInside"
         android:translationX="-20dp"
         android:layout_width="130dp"
@@ -46,7 +46,7 @@
 
     <ImageView
         android:id="@+id/imageView_cloudRight"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="120dp"
         android:translationX="20dp"
         android:scaleType="centerInside"
         android:layout_width="130dp"
@@ -57,7 +57,6 @@
         app:tint="@color/lightGrey" />
 
     <LinearLayout
-        android:layout_marginTop="-40dp"
         android:id="@+id/linearlayout_inputs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,7 +81,7 @@
 
 
         <EditText
-            android:id="@+id/edt_name"
+            android:id="@+id/editTextEmailNav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -92,12 +91,11 @@
             android:drawablePadding="16dp"
             android:hint="Họ và tên"
             android:inputType="text"
-            android:imeOptions="actionNext"
             android:padding="16dp"
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/edt_email"
+            android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -108,11 +106,10 @@
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:padding="16dp"
-            android:imeOptions="actionNext"
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/edt_phone"
+            android:id="@+id/editTextSdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -123,13 +120,12 @@
             android:hint="Số điện thoại"
             android:inputType="number"
             android:padding="16dp"
-            android:imeOptions="actionNext"
             android:textSize="14sp" />
 
 
 
         <EditText
-            android:id="@+id/edt_password"
+            android:id="@+id/editTextMatKhau"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -140,11 +136,10 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:padding="16dp"
-            android:imeOptions="actionNext"
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/edt_confirm_password"
+            android:id="@+id/editTextXacNhan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -155,12 +150,11 @@
             android:hint="Xác nhận lại Password"
             android:inputType="textPassword"
             android:padding="16dp"
-            android:imeOptions="actionDone"
             android:textSize="14sp" />
 
 
         <Button
-            android:id="@+id/btn_sign_up"
+            android:id="@+id/buttonSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -168,12 +162,12 @@
             android:backgroundTint="@color/colorGreen"
             android:text="Đăng Ký"
             android:textColor="@color/white"
-            app:backgroundTint="@color/cPrimary" />
+            app:backgroundTint="@color/colorGreen" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_ref_login"
+        android:id="@+id/textView_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
