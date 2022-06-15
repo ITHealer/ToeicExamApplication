@@ -97,7 +97,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view5">
 
         <RadioButton
-            android:id="@+id/op1"
+            android:id="@+id/rdbA"
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginLeft="30dp"
@@ -108,7 +108,7 @@
             android:textSize="20sp"></RadioButton>
 
         <RadioButton
-            android:id="@+id/op2"
+            android:id="@+id/rdbB"
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginLeft="30dp"
@@ -119,7 +119,7 @@
             android:textSize="20sp"></RadioButton>
 
         <RadioButton
-            android:id="@+id/op3"
+            android:id="@+id/rdbC"
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginLeft="30dp"
@@ -130,7 +130,7 @@
             android:textSize="20sp"></RadioButton>
 
         <RadioButton
-            android:id="@+id/op4"
+            android:id="@+id/rdbD"
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginLeft="30dp"

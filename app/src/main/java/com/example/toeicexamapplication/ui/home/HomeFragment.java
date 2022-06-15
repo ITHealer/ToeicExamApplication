@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.toeicexamapplication.R;
 import com.example.toeicexamapplication.account.MyProfileActivity;
+import com.example.toeicexamapplication.account.RankingActivity;
 import com.example.toeicexamapplication.databinding.FragmentHomeBinding;
 import com.example.toeicexamapplication.grammar.GrammarActivity;
 import com.example.toeicexamapplication.listening.ListeningActivity;
@@ -74,7 +75,7 @@ public class HomeFragment extends Fragment {
         lRanking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getActivity(), ReadingActivity.class);
+                Intent intent=new Intent(getActivity(), RankingActivity.class);
                 startActivity(intent);
             }
         });
