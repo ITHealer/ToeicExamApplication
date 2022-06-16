@@ -103,9 +103,10 @@
         app:layout_constraintBottom_toTopOf="@+id/scrollView"
         android:textSize="30dp"
         android:hint="Tense Name"
+        android:textAllCaps="true"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:textColor="#000"
+        android:textColor="#05B63F"
         android:textAlignment="center"/>
     <ScrollView
         android:id="@+id/scrollView"
@@ -117,13 +118,13 @@
         android:id="@+id/lndetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:text="Định nghĩa: "
             android:textColor="#323131"
             android:textSize="20dp"/>
@@ -141,6 +142,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#323131"
+            android:textStyle="bold"
             android:text="Cấu trúc: "
             android:textSize="20dp"/>
 
@@ -171,6 +173,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Chú thích: "
+            android:textStyle="bold"
             android:textColor="#323131"
             android:textSize="20dp"/>
 
@@ -188,6 +191,7 @@
             android:layout_height="wrap_content"
             android:text="Dấu hiệu: "
             android:textColor="#323131"
+            android:textStyle="bold"
             android:textSize="20dp"/>
 
         <TextView
@@ -204,6 +208,7 @@
             android:layout_height="wrap_content"
             android:text="Ví dụ: "
             android:textSize="20dp"
+            android:textStyle="bold"
             android:textColor="#323131"/>
 
         <TextView

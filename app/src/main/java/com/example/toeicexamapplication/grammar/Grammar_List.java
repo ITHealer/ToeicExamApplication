@@ -18,7 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class Grammar_List extends AppCompatActivity implements ValueEventListener {
+public class Grammar_List extends AppCompatActivity {
 
     TextView tvTense;
     TextView tvDinhnghia;
@@ -28,8 +28,6 @@ public class Grammar_List extends AppCompatActivity implements ValueEventListene
     TextView tvChuthich;
     TextView tvDauhieu;
     TextView tvVidu;
-    String noidung, tenThi;
-    DatabaseReference myRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +36,15 @@ public class Grammar_List extends AppCompatActivity implements ValueEventListene
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.cPrimary)));
         addControls();
         Intent intent = getIntent();
-        tenThi = intent.getStringExtra("Tenthi");
-        myRef = FirebaseDatabase.getInstance().getReference().child("Reading").child(tenThi);
-        myRef.addValueEventListener(this);
+        Grammar grammar = (Grammar) intent.getSerializableExtra("Tenthi");
+        tvTense.setText(grammar.getTenThi());
+        tvDinhnghia.setText(grammar.getDinhnghia());
+        tvKhangdinh.setText(grammar.getKhangDinh());
+        tvNghivan.setText(grammar.getNghiVan());
+        tvPhudinh.setText(grammar.getPhuDinh());
+        tvDauhieu.setText(grammar.getDauHieu());
+        tvChuthich.setText(grammar.getChuThich());
+        tvVidu.setText(grammar.getViDu());
     }
 
     private void addControls() {
@@ -52,23 +56,5 @@ public class Grammar_List extends AppCompatActivity implements ValueEventListene
         tvChuthich = findViewById(R.id.tvChuthich);
         tvDauhieu = findViewById(R.id.tvDauhieu);
         tvVidu = findViewById(R.id.tvVidu);
-    }
-
-    @Override
-    public void onDataChange(@NonNull DataSnapshot snapshot) {
-        Grammar grammar = snapshot.getValue(Grammar.class);
-        tvTense.setText(grammar.getTenThi());
-        tvKhangdinh.setText(grammar.getKhangDinh());
-        tvNghivan.setText(grammar.getNghiVan());
-        tvPhudinh.setText(grammar.getPhuDinh());
-        tvDauhieu.setText(grammar.getDauHieu());
-        tvChuthich.setText(grammar.getChuThich());
-        tvDinhnghia.setText(grammar.getDinhnghia());
-        tvVidu.setText(grammar.getViDu());
-    }
-
-    @Override
-    public void onCancelled(@NonNull DatabaseError error) {
-        Toast.makeText(Grammar_List.this, "Get Grammar fail", Toast.LENGTH_SHORT).show();
     }
 }

@@ -77,13 +77,12 @@
         android:id="@+id/imageListening"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginBottom="105dp"
         android:src="@drawable/ic_brain"
         app:layout_constraintBottom_toTopOf="@+id/lvluyennghe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintVertical_bias="0.0"
+
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="UseAppTint" />
 

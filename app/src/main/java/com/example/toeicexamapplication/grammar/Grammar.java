@@ -1,14 +1,16 @@
 package com.example.toeicexamapplication.grammar;
 
-public class Grammar{
+import java.io.Serializable;
+
+public class Grammar implements Serializable {
     private String KhangDinh;
     private String PhuDinh;
     private String NghiVan;
     private String ChuThich;
     private String DauHieu;
-    private String Dinhnghia;
+    private String DinhNghia;
     private String TenThi;
-    private String ViDu;
+    private String Vidu;
 
     public Grammar() {
     }
@@ -19,9 +21,9 @@ public class Grammar{
         NghiVan = nghiVan;
         ChuThich = chuThich;
         DauHieu = dauHieu;
-        Dinhnghia = dinhnghia;
+        DinhNghia = dinhnghia;
         TenThi = tenThi;
-        ViDu = viDu;
+        Vidu = viDu;
     }
 
     public String getKhangDinh() {
@@ -65,11 +67,11 @@ public class Grammar{
     }
 
     public String getDinhnghia() {
-        return Dinhnghia;
+        return DinhNghia;
     }
 
     public void setDinhnghia(String dinhnghia) {
-        Dinhnghia = dinhnghia;
+        DinhNghia = dinhnghia;
     }
 
     public String getTenThi() {
@@ -81,10 +83,10 @@ public class Grammar{
     }
 
     public String getViDu() {
-        return ViDu;
+        return Vidu;
     }
 
     public void setViDu(String viDu) {
-        ViDu = viDu;
+        Vidu = viDu;
     }
 }

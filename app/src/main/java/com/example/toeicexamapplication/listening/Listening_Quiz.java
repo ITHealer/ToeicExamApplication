@@ -10,6 +10,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -21,6 +22,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.toeicexamapplication.MainActivity;
 import com.example.toeicexamapplication.R;
 import com.example.toeicexamapplication.account.User;
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,6 +32,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Base64;
 
@@ -44,7 +55,9 @@ public class Listening_Quiz extends AppCompatActivity {
     ArrayList<Listening> listen;
     MediaPlayer mediaPlayer;
     ImageButton imgBT;
+    Bitmap myBitmap;
     User user;
+    URI uri;
     private FirebaseAuth myAuth;
     int questioncurrent = 0;
     int questiontrue = 0;
@@ -91,7 +104,11 @@ public class Listening_Quiz extends AppCompatActivity {
                 checkans();
                 questioncurrent++;
                 countDownTimer.start();
-
+                if(questioncurrent == listen.size()+1){
+                    Toast.makeText(Listening_Quiz.this, "Congratulation!!!", Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(Listening_Quiz.this, MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
         // When the video file ready for playback.
@@ -123,8 +140,7 @@ public class Listening_Quiz extends AppCompatActivity {
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Iterable<DataSnapshot> nodeChild = snapshot.getChildren();
-                for (DataSnapshot dataSnapshot : nodeChild){
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Listening ls = dataSnapshot.getValue(Listening.class);
                     listen.add(ls);
                 }
@@ -140,24 +156,28 @@ public class Listening_Quiz extends AppCompatActivity {
 
     public void shownextquestion(int pos, ArrayList<Listening> lt){
         if(pos > 0) doStop();
-        tvquestcount.setText("Question: "+(questioncurrent+1)+"/"+lt.size()+"");
+        tvquestcount.setText("Question: "+(questioncurrent)+"/"+lt.size()+"");
         rdgchoices.clearCheck();
         rdbA.setBackground(this.getResources().getDrawable(R.drawable.bgbtn));
         rdbB.setBackground(this.getResources().getDrawable(R.drawable.bgbtn));
         rdbC.setBackground(this.getResources().getDrawable(R.drawable.bgbtn));
         rdbD.setBackground(this.getResources().getDrawable(R.drawable.bgbtn));
 
-        if(pos==lt.size()){
-//            DB.capnhatdiem(DB.iduser,user.getPoint(),score);
-//            Intent intent=new Intent(ListeningActivity.this, FinishQuizLSActivity.class);
-//            intent.putExtra("score",score);
-//            intent.putExtra("questiontrue", questiontrue);
-//            intent.putExtra("qcount", pos);
-//            startActivity(intent);
+        if(pos == lt.size()){
+            Toast.makeText(Listening_Quiz.this, "Congratulation!!!", Toast.LENGTH_SHORT).show();
         }
         else {
-            Bitmap img = BitmapFactory.decodeFile(lt.get(pos).getImage());
-            imglisten.setImageBitmap(img);
+            try {
+                uri = new URI(lt.get(pos).getImage());
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            }
+            String url = lt.get(pos).getImage();
+            byte[] encodeByte = url.getBytes();
+            Bitmap img = BitmapFactory.decodeByteArray(encodeByte,0,encodeByte.length);
+            //imglisten.setImageBitmap(img);
+            imglisten.setImageURI(Uri.parse(lt.get(pos).getImage()));
+
             String URLaudio = lt.get(pos).getAudio();
             URL = URLaudio;
             answer = lt.get(pos).getTrue();
@@ -171,25 +191,25 @@ public class Listening_Quiz extends AppCompatActivity {
         btnconfirm.setEnabled(false);
         if(rdbA.isChecked()){
             if(1==answer) {
-                score+=5;
+                score+=20;
                 questiontrue++;
             }
         }
         if(rdbB.isChecked()){
             if(2==answer) {
-                score+=5;
+                score+=20;
                 questiontrue++;
             }
         }
         if(rdbC.isChecked()){
             if(3==answer) {
-                score+=5;
+                score+=20;
                 questiontrue++;
             }
         }
         if(rdbD.isChecked()){
             if(4==answer) {
-                score+=5;
+                score+=20;
                 questiontrue++;
             }
         }

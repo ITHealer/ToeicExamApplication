@@ -17,8 +17,8 @@ import java.util.List;
 public class ListGrammarAdapter extends ArrayAdapter {
     Context context;
     private static int resource;
-    List<Tense> objects;
-    public ListGrammarAdapter(@NonNull Context context, int resource, List<Tense> objects) {
+    List<Grammar> objects;
+    public ListGrammarAdapter(@NonNull Context context, int resource, List<Grammar> objects) {
         super(context, resource, objects);
         this.context = context;
         this.resource = resource;
@@ -31,8 +31,8 @@ public class ListGrammarAdapter extends ArrayAdapter {
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(resource, parent, false);
         TextView tvTense = view.findViewById(R.id.tvTense);
-        Tense tense = objects.get(position);
-        tvTense.setText(tense.getTense_Name());
+        Grammar grammar = objects.get(position);
+        tvTense.setText(grammar.getTenThi());
         return view;
     }
 }

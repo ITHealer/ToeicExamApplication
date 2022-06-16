@@ -32,11 +32,9 @@ import java.util.List;
 public class GrammarActivity extends AppCompatActivity implements ValueEventListener {
 
     DatabaseReference myRef;
-    List<Tense> tenseList;
+    List<Grammar> grammarList;
     ListView listView;
-    Tense tense_Name;
     ListGrammarAdapter listGrammarAdapter;
-    TextView tvTense;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,16 +43,16 @@ public class GrammarActivity extends AppCompatActivity implements ValueEventList
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.cPrimary)));
         myRef = FirebaseDatabase.getInstance().getReference().child("Grammar");
         listView = (ListView) findViewById(R.id.lvListgrammar);
-        tenseList = new ArrayList<>();
-        listGrammarAdapter = new ListGrammarAdapter(this,R.layout.row_grammar,tenseList);
+        grammarList = new ArrayList<>();
+        listGrammarAdapter = new ListGrammarAdapter(this,R.layout.row_grammar,grammarList);
         listView.setAdapter(listGrammarAdapter);
         myRef.addValueEventListener(this);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent=new Intent(GrammarActivity.this, Grammar_List.class);
-                String name = tenseList.get(i).getTense_Name();
-                intent.putExtra("Tenthi", name);
+                Grammar grammar = grammarList.get(i);
+                intent.putExtra("Tenthi", grammar);
                 startActivity(intent);
             }
         });
@@ -66,8 +64,8 @@ public class GrammarActivity extends AppCompatActivity implements ValueEventList
         for(DataSnapshot data : nodeChild)
         {
             String name = data.getKey();
-            Tense tense = new Tense(name);
-            tenseList.add(tense);
+            Grammar gramar = data.getValue(Grammar.class);
+            grammarList.add(gramar);
             listGrammarAdapter.notifyDataSetChanged();
 
         }

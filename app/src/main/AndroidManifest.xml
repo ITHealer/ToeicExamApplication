@@ -23,10 +23,14 @@
             android:parentActivityName=".vocabulary.VocabularyActivity" />
         <activity
             android:name=".grammar.Grammar_List"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Detail_grammar"
+            android:parentActivityName=".grammar.GrammarActivity"/>
         <activity
             android:name=".listening.Listening_Quiz"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Quiz_listen"
+            android:parentActivityName=".listening.ListeningActivity"/>
         <activity
             android:name=".vocabulary.activity_vocabulary_words"
             android:exported="false"
@@ -54,11 +58,13 @@
         <activity
             android:name=".grammar.GrammarActivity"
             android:exported="false"
-            android:label="@string/menu_grammar" />
+            android:label="@string/menu_grammar"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".listening.ListeningActivity"
             android:exported="false"
-            android:label="Listening" />
+            android:label="Listening"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".vocabulary.VocabularyActivity"
             android:exported="false"

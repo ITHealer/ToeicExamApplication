@@ -82,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="@+id/view5"
         app:layout_constraintStart_toStartOf="@+id/view5"
         android:gravity="center"
-        android:src="@drawable/cloud"
+        android:src="@drawable/lis_1"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="96dp"></ImageView>
 
