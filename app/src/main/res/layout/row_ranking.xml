@@ -39,17 +39,17 @@
             android:id="@+id/tvpointrank"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:gravity="center"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="27dp"
-
             android:layout_marginEnd="25dp"
+
             android:layout_marginRight="25dp"
             android:layout_marginBottom="31dp"
             android:layout_toStartOf="@+id/imagerank"
             android:layout_toLeftOf="@+id/imagerank"
             android:fontFamily="@font/bungee"
+            android:gravity="center"
             android:text="10"
             android:textSize="15sp" />
 

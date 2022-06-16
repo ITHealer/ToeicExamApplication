@@ -24,7 +24,7 @@
         <activity
             android:name=".grammar.Grammar_List"
             android:exported="false"
-            android:label="Detail_grammar"
+            android:label="Ngữ pháp"
             android:parentActivityName=".grammar.GrammarActivity"/>
         <activity
             android:name=".listening.Listening_Quiz"
@@ -70,6 +70,9 @@
             android:exported="false"
             android:label="Vocabulary"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".account.RankingActivity"
+            android:exported="false" />
         <activity
             android:name=".account.ForgotPasswordActivity"
             android:exported="false" />

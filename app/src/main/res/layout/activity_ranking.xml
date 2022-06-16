@@ -10,6 +10,7 @@
         android:id="@+id/imagerank1"
         android:layout_width="60dp"
         android:layout_height="100dp"
+        android:paddingTop="40dp"
         android:layout_alignParentRight="true"
 
         android:layout_marginBottom="92dp"
@@ -22,6 +23,7 @@
     <ImageView
 
         android:id="@+id/imagerank2"
+        android:paddingTop="55dp"
         android:layout_width="60dp"
         android:layout_height="100dp"
         android:layout_alignParentRight="true"
@@ -41,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/bungee"
         android:gravity="center"
         android:text="100"
@@ -56,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="-1dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/bungee"
         android:gravity="center"
         android:text="100"
@@ -73,6 +76,7 @@
         android:fontFamily="@font/bungee"
         android:text="100"
         android:textSize="20sp"
+        android:layout_marginTop="12dp"
         app:layout_constraintBottom_toTopOf="@+id/userranklist"
         app:layout_constraintEnd_toStartOf="@+id/tvpointrank3"
         app:layout_constraintHorizontal_bias="0.496"
@@ -85,7 +89,7 @@
         android:layout_width="60dp"
         android:layout_height="100dp"
         android:layout_alignParentRight="true"
-
+        android:paddingTop="55dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="92dp"

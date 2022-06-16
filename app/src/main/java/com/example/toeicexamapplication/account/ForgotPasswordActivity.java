@@ -6,6 +6,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -20,18 +21,28 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
     private EditText edtEmailForgotPassword;
     private Button btnSendEmail;
+    private TextView tvBackLogin;
 
     FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dialog_forgot_password);
 
         edtEmailForgotPassword = (EditText) findViewById(R.id.edt_send_email);
         btnSendEmail = (Button) findViewById(R.id.btn_send_email);
+        tvBackLogin = (TextView) findViewById(R.id.tv_back_login);
 
         mAuth = FirebaseAuth.getInstance();
+
+        tvBackLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ForgotPasswordActivity.this, SignInActivity.class));
+            }
+        });
 
         btnSendEmail.setOnClickListener(new View.OnClickListener() {
             @Override
