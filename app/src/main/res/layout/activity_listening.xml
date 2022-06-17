@@ -77,7 +77,7 @@
         android:id="@+id/imageListening"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="105dp"
+        android:layout_marginBottom="95dp"
         android:src="@drawable/ic_brain"
         app:layout_constraintBottom_toTopOf="@+id/lvluyennghe"
         app:layout_constraintEnd_toEndOf="parent"

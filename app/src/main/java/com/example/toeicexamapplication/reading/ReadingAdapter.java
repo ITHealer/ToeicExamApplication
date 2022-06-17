@@ -38,7 +38,7 @@ public class ReadingAdapter extends ArrayAdapter<Reading> {
         RadioButton op3 = view.findViewById(R.id.op1);
         RadioButton op4 = view.findViewById(R.id.op1);
         Reading topic = objects.get(position);
-        conent.setText(topic.getQuestion());
+        conent.setText(topic.getCauHoi());
         op1.setText(topic.getA());
         op2.setText(topic.getB());
         op3.setText(topic.getC());

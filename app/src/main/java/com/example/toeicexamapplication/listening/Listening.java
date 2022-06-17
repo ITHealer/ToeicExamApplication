@@ -7,14 +7,14 @@ public class Listening implements Serializable {
     private String B;
     private String C;
     private String D;
-    private int True;
+    private String True;
     private String Image;
     private String Audio;
 
     public Listening() {
     }
 
-    public Listening(String a, String b, String c, String d, int aTrue, String image, String audio) {
+    public Listening(String a, String b, String c, String d, String aTrue, String image, String audio) {
         A = a;
         B = b;
         C = c;
@@ -56,11 +56,11 @@ public class Listening implements Serializable {
         D = d;
     }
 
-    public int getTrue() {
+    public String getTrue() {
         return True;
     }
 
-    public void setTrue(int aTrue) {
+    public void setTrue(String aTrue) {
         True = aTrue;
     }
 

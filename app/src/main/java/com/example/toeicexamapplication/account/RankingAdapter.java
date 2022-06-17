@@ -1,4 +1,4 @@
-package com.example.toeicexamapplication.listening;
+package com.example.toeicexamapplication.account;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,22 +6,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.toeicexamapplication.R;
-import com.example.toeicexamapplication.reading.Reading;
+import com.example.toeicexamapplication.grammar.Grammar;
+
+import org.w3c.dom.Text;
 
 import java.util.List;
 
-public class ListListenAdapter extends ArrayAdapter {
+public class RankingAdapter extends ArrayAdapter {
     Context context;
     private static int resource;
-    List<Listening> objects;
-    public ListListenAdapter(@NonNull Context context, int resource, List<Listening> objects) {
+    List<Ranking> objects;
+    public RankingAdapter(@NonNull Context context, int resource, List<Ranking> objects) {
         super(context, resource, objects);
         this.context = context;
         this.resource = resource;
@@ -33,17 +34,13 @@ public class ListListenAdapter extends ArrayAdapter {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(resource, parent, false);
-        ImageView image = view.findViewById(R.id.imgHinh);
-        RadioButton op1 = view.findViewById(R.id.rdbA);
-        RadioButton op2 = view.findViewById(R.id.rdbB);
-        RadioButton op3 = view.findViewById(R.id.rdbC);
-        RadioButton op4 = view.findViewById(R.id.rdbD);
-        Listening topic = objects.get(position);
-        image.setImageResource(R.drawable.lis_1);
-        op1.setText(topic.getA());
-        op2.setText(topic.getB());
-        op3.setText(topic.getC());
-        op4.setText(topic.getD());
+        TextView tvHoTenRank = view.findViewById(R.id.tvhotenrank);
+        TextView tvPointRank = view.findViewById(R.id.tvpointrank);
+        ImageView img = view.findViewById(R.id.imagerank);
+        Ranking r = objects.get(position);
+        tvHoTenRank.setText(r.getName());
+        tvPointRank.setText(String.valueOf(r.getPoint()));
+        img.setImageResource(R.drawable.ic_rank);
         return view;
     }
 }

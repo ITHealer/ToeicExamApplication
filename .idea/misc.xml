@@ -11,27 +11,31 @@
         <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/SQLiteAndroid/ToeicExamApplication/app/src/main/res/layout/dialog_forgot_password.xml" value="0.22" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/drawable/background_listview_grammar.xml" value="0.2595" />
-        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/drawable/button_false.xml" value="0.257" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/drawable/ic_dollar.xml" value="0.1885" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/drawable/ic_trophy.xml" value="0.1885" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/drawable/list_grammar.xml" value="0.113" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/drawable/question_background.xml" value="0.2595" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_account.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_congra_listen.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_content.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_grammar.xml" value="0.264" />
-        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_grammar_list.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_listening.xml" value="0.1" />
-        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_listening_quiz.xml" value="0.264" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_grammar_list.xml" value="0.1" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_listening.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_listening_quiz.xml" value="0.1" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_my_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_ranking.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_reading.xml" value="0.25052083333333336" />
-        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_reading_answers.xml" value="0.1" />
-        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_reading_questions.xml" value="0.25052083333333336" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_reading_answers.xml" value="0.16140350877192983" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_reading_questions.xml" value="0.1" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/activity_vocabulary.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/dialog_forgot_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/demogmar.xml" value="0.1" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/demoreading.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/fragment_home.xml" value="0.13333333333333333" />
-        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/item_grammar.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/item_quiz.xml" value="0.25052083333333336" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/item_reading.xml" value="0.25052083333333336" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/item_word.xml" value="0.25052083333333336" />
-        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/row_grammar.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/row_grammar_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/row_grammar.xml" value="0.2" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/row_listening.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/Android/Baitap/ToeicExamApplication/Toeic2/app/src/main/res/layout/row_ranking.xml" value="0.264" />
         <entry key="..\:/Users/LAPTOP/Desktop/ToeicExamApplication/app/src/main/res/drawable-v24/ic_back.xml" value="0.178" />

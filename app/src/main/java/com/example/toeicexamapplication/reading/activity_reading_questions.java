@@ -9,8 +9,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.toeicexamapplication.R;
 import com.example.toeicexamapplication.vocabulary.ListTopicAdapter;
@@ -33,6 +35,8 @@ public class activity_reading_questions extends AppCompatActivity implements Val
     List<Topic> readingList;
     ListReading readingAdapter;
     DatabaseReference databaseReference, databaseReference1;
+    Button btnShow;
+    int size;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +73,13 @@ public class activity_reading_questions extends AppCompatActivity implements Val
                     startActivity(intent);
                 }
 
+            }
+        });
+        btnShow = (Button) findViewById(R.id.btnShow);
+        btnShow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(activity_reading_questions.this, "Ba gia m" + readingList.size(), Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -46,7 +46,6 @@ public class ReadingActivity extends AppCompatActivity implements ValueEventList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reading);
-        int i,k;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.cPrimary)));
 
@@ -60,7 +59,7 @@ public class ReadingActivity extends AppCompatActivity implements ValueEventList
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent=new Intent(ReadingActivity.this, activity_content.class);
+                Intent intent=new Intent(ReadingActivity.this, activity_reading_answers.class);
                 ChuDe = topicList.get(i).getName_topic();
                 intent.putExtra("ChuDe", ChuDe);
                 startActivity(intent);

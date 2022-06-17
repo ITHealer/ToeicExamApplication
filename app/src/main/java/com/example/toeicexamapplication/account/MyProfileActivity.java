@@ -47,6 +47,7 @@ public class MyProfileActivity extends AppCompatActivity {
                 onClickUpdateMyProfile();
             }
         });
+
     }
 
     private void onClickUpdateMyProfile() {

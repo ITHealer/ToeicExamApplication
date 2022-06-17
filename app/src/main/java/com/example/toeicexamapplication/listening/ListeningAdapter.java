@@ -43,6 +43,7 @@ public class ListeningAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.row_listening, null);
         }
+
         //đọc item thứ i lưu vào biến bode
         Listen_list bode = lsbode.get(i);
         ImageView imgIcon = view.findViewById(R.id.imgIcon);

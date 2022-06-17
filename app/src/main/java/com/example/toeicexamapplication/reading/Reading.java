@@ -1,7 +1,7 @@
 package com.example.toeicexamapplication.reading;
 
 public class Reading {
-    private String Question;
+    private String CauHoi;
     private String A;
     private String B;
     private String C;
@@ -10,12 +10,12 @@ public class Reading {
 
     public Reading(){}
 
-    public String getQuestion() {
-        return Question;
+    public String getCauHoi() {
+        return CauHoi;
     }
 
-    public void setQuestion(String question) {
-        Question = question;
+    public void setCauHoi(String cauHoi) {
+        CauHoi = cauHoi;
     }
 
     public String getA() {
